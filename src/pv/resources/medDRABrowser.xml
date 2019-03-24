@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="MedDRA Launch Component">
+
+	<test name="medDRALaunch">
+		<classes>
+			<class name="pv.selenium.medDRABrowser.medDRALaunch"></class>	
+		</classes>
+	</test>
+</suite>

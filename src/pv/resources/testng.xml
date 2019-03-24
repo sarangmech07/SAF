@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MedDRA Browser" >
+
+  <suite-files>
+	<suite-file path="src/pv/resources/medDRABrowser.xml"/>
+ 
+  </suite-files>
+  <listeners>
+          <listener class-name="pv.selenium.hybrid.util.ExecutionListener" />
+   </listeners>
+</suite>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Admin Console">
+
+	<test name="Admin Console for User">
+
+	<classes>
+	<class name="pv.selenium.adminConsole.ProductSectionInsert"></class>
+	<!--<class name="pv.selenium.adminConsole.EventSectionInsert"></class>
+	 <class name="pv.selenium.adminConsole.NotificationSectionInsert"></class>
+	<class name="pv.selenium.adminConsole.ProgramSectionInsert"></class>
+	<class name="pv.selenium.adminConsole.ProductSectionUpdate"></class>
+	<class name="pv.selenium.adminConsole.ProductSectionDelete"></class>
+	<class name="pv.selenium.adminConsole.EventSectionUpdate"></class>
+	<class name="pv.selenium.adminConsole.EventSectionDelete"></class>
+	<class name="pv.selenium.adminConsole.NotificationSectionUpdate"></class>
+	<class name="pv.selenium.adminConsole.NotificationSectionDelete"></class>
+	<class name="pv.selenium.adminConsole.ProgramSectionUpdate"></class>
+	<class name="pv.selenium.adminConsole.ProgramSectionDelete"></class>
+	<class
+		name="pv.selenium.adminConsole.ProductSectionSearch_Scenario1"></class>
+	<class
+		name="pv.selenium.adminConsole.ProductSectionSearchSC1_Scenario1"></class>
+	<class
+		name="pv.selenium.adminConsole.ProductSectionSearchSC2_Scenario1"></class>
+	<class
+		name="pv.selenium.adminConsole.ProductSectionSearch_Scenario2"></class>
+	<class
+		name="pv.selenium.adminConsole.EventSectionSearch_Scenario1"></class>
+	<class
+		name="pv.selenium.adminConsole.EventSectionSearch_Scenario2"></class>
+	<class
+		name="pv.selenium.adminConsole.NotificationSectionSearch_Scenario1"></class>
+	<class
+		name="pv.selenium.adminConsole.ProgramSectionSearch_Scenario1"></class>
+	<class
+		name="pv.selenium.adminConsole.ProgramSectionSearch_Scenario2"></class>
+	<class
+		name="pv.selenium.adminConsole.ProgramSectionSearch_Scenario3"></class>
+ -->
+
+
+			<!--For pv.selenium.adminConsole.ProductSectionSearch_Scenario1 count 
+				between UI and DB may have a mismatch as DB may have records where create_date 
+				or any other column (These columns should be ideally not null) is null and 
+				is not displayed on the UI. This issue has been discussed with Vineet and 
+				for the workaround the record present in the DB will be delete where the 
+				column is having null values. -->
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MedDRA Launch Component]">
+  <listeners>
+    <listener class-name="pv.selenium.hybrid.util.ExecutionListener"/>
+  </listeners>
+  <test thread-count="5" name="medDRALaunch(failed)">
+    <classes>
+      <class name="pv.selenium.medDRABrowser.medDRALaunch">
+        <methods>
+          <include name="init"/>
+          <include name="copyReportMethod" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- pv.selenium.medDRABrowser.medDRALaunch -->
+    </classes>
+  </test> <!-- medDRALaunch(failed) -->
+</suite> <!-- Failed suite [MedDRA Launch Component] -->

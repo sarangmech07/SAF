@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PVI Automated Sanity Suite">
+
+  <suite-files>
+    
+    <suite-file path="src/pv/resources/sanity/adminConsole.xml"/>
+	<!-- 
+	<suite-file path="./sanity/caseDashboard.xml" />
+	<suite-file path="./sanity/caseSearch.xml" />	
+	
+	<suite-file path="./sanity/changeDetailSR.xml" />
+	<suite-file path="./sanity/HCP.xml" />
+	<suite-file path="./sanity/MaxLength.xml"/>
+    <suite-file path="./sanity/MOP_Attachments.xml" />
+	
+    <suite-file path="./sanity/POP.xml" />
+    <suite-file path="./sanity/registerGuestUser.xml" />
+	<suite-file path="./sanity/RemoveFromReportPOP.xml" />
+	<suite-file path="./sanity/RemoveFromReportSR.xml" />
+	
+	<suite-file path="./sanity/SR.xml" />  
+    <suite-file path="./sanity/startEndDate.xml" />	
+	<suite-file path="./sanity/updateProfile.xml" />
+    <suite-file path="./sanity/userManagement.xml" />
+    <suite-file path="./sanity/verifyEmailMOP.xml" />
+    -->
+  </suite-files>
+   <listeners>
+          <listener class-name="pv.selenium.hybrid.util.ExecutionListener" />
+   </listeners>
+</suite>

@@ -1,0 +1,8 @@
+
+Node- 
+java -Dwebdriver.gecko.driver=D:\drivers\geckodriver.exe -Dwebdriver.chrome.driver=D:\drivers\chromedriver.exe -Dwebdriver.ie.driver=D:\drivers\IEDriverServer.exe -jar D:\drivers\selenium-server-standalone-3.14.0.jar -role node  -nodeConfig D:\drivers\node1.json
+
+
+
+Hub
+ java -jar selenium-server-standalone-3.14.0.jar -role hub -hubConfig hub.json

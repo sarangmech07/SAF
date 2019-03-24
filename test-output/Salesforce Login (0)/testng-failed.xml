@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Salesforce Login (0)]">
+  <listeners>
+    <listener class-name="pv.selenium.hybrid.util.ExecutionListener"/>
+  </listeners>
+  <test thread-count="5" name="loginToSalesforce(failed)">
+    <classes>
+      <class name="pv.selenium.salesforceLogin1.salesforceLogin">
+        <methods>
+          <include name="copyReportMethod" invocation-numbers="0"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- pv.selenium.salesforceLogin1.salesforceLogin -->
+    </classes>
+  </test> <!-- loginToSalesforce(failed) -->
+</suite> <!-- Failed suite [Salesforce Login (0)] -->

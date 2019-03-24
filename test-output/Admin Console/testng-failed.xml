@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Admin Console]">
+  <listeners>
+    <listener class-name="pv.selenium.hybrid.util.ExecutionListener"/>
+  </listeners>
+  <test thread-count="5" name="Admin Console for User(failed)">
+    <classes>
+      <class name="pv.selenium.adminConsole.ProductSectionInsert">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="productSectionInsert" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- pv.selenium.adminConsole.ProductSectionInsert -->
+    </classes>
+  </test> <!-- Admin Console for User(failed) -->
+</suite> <!-- Failed suite [Admin Console] -->

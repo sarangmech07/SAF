@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [pv Automation]">
+  <listeners>
+    <listener class-name="pv.selenium.hybrid.util.ExecutionListener"/>
+  </listeners>
+  <test thread-count="5" name="CaseHistoryOption(failed)">
+    <classes>
+      <class name="pv.selenium.caseDashboard.CaseHistoryOption">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="copyReportMethod" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- pv.selenium.caseDashboard.CaseHistoryOption -->
+    </classes>
+  </test> <!-- CaseHistoryOption(failed) -->
+  <test thread-count="5" name="CaseDetailsOption(failed)">
+    <classes>
+      <class name="pv.selenium.caseDashboard.CaseDetailsOption">
+        <methods>
+          <include name="quit"/>
+          <include name="copyReportMethod" invocation-numbers="0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- pv.selenium.caseDashboard.CaseDetailsOption -->
+    </classes>
+  </test> <!-- CaseDetailsOption(failed) -->
+</suite> <!-- Failed suite [pv Automation] -->

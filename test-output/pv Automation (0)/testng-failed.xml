@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [pv Automation (0)]">
+  <listeners>
+    <listener class-name="pv.selenium.hybrid.util.ExecutionListener"/>
+  </listeners>
+  <test thread-count="5" name="case Search7(failed)">
+    <classes>
+      <class name="pv.selenium.caseSearch.caseSearchCriteria7">
+        <methods>
+          <include name="quit"/>
+          <include name="copyReportMethod" invocation-numbers="0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- pv.selenium.caseSearch.caseSearchCriteria7 -->
+    </classes>
+  </test> <!-- case Search7(failed) -->
+  <test thread-count="5" name="ResetOnSearch(failed)">
+    <classes>
+      <class name="pv.selenium.caseSearch.ResetOnSearch">
+        <methods>
+          <include name="quit"/>
+          <include name="copyReportMethod" invocation-numbers="0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- pv.selenium.caseSearch.ResetOnSearch -->
+    </classes>
+  </test> <!-- ResetOnSearch(failed) -->
+</suite> <!-- Failed suite [pv Automation (0)] -->
