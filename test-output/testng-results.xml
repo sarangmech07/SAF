@@ -2,28 +2,31 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="646" started-at="2019-03-24T20:12:28Z" finished-at="2019-03-24T20:12:29Z">
+  <suite name="Default suite" duration-ms="116062" started-at="2019-03-27T07:16:33Z" finished-at="2019-03-27T07:18:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="646" started-at="2019-03-24T20:12:28Z" finished-at="2019-03-24T20:12:29Z">
+    <test name="Default test" duration-ms="116062" started-at="2019-03-27T07:16:33Z" finished-at="2019-03-27T07:18:29Z">
       <class name="pv.selenium.medDRABrowser.medDRALaunch">
-        <test-method status="PASS" signature="init()[pri:0, instance:pv.selenium.medDRABrowser.medDRALaunch@1060b431]" name="init" is-config="true" duration-ms="552" started-at="2019-03-24T20:12:28Z" finished-at="2019-03-24T20:12:29Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:pv.selenium.medDRABrowser.medDRALaunch@1060b431]" name="init" is-config="true" duration-ms="2874" started-at="2019-03-27T07:16:33Z" finished-at="2019-03-27T07:16:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="copyReportMethod(java.util.Hashtable)[pri:0, instance:pv.selenium.medDRABrowser.medDRALaunch@1060b431]" name="copyReportMethod" duration-ms="60" started-at="2019-03-24T20:12:29Z" data-provider="getData" finished-at="2019-03-24T20:12:29Z">
+        <test-method status="FAIL" signature="copyReportMethod(java.util.Hashtable)[pri:0, instance:pv.selenium.medDRABrowser.medDRALaunch@1060b431]" name="copyReportMethod" duration-ms="113028" started-at="2019-03-27T07:16:36Z" data-provider="getData" finished-at="2019-03-27T07:18:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{SOC=SOC, Username=saranga.baruah@spde29.dev, Password=Sapient123, Runmode=Y, SearchTerm=card, ModuleName=MedDRA Launch Component, Browser=Chrome}]]>
+                <![CDATA[{Setup=Setup, SearchTerm=card, Username=saranga.baruah@spde29.dev, Runmode=Y, ALL=ALL, HLGT=HLGT, LLT=SOC, PT=PT, Lang_JA=JA, HLT=HLT, Password=Sapient123, V_21.1=21.1, SOC=SOC, V_21.0=21.0, Lang_EN=EN, Browser=Chrome, ModuleName=MedDRA Launch Component}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[FAIL]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at pv.selenium.hybrid.keywords.GenericKeywords.openBrowser(GenericKeywords.java:91)
-at pv.selenium.hybrid.keywords.Keywords.executeKeywords(Keywords.java:58)
+              <![CDATA[java.lang.AssertionError: FAIL
+at org.testng.Assert.fail(Assert.java:96)
+at pv.selenium.hybrid.keywords.Keywords.executeKeywords(Keywords.java:139)
 at pv.selenium.medDRABrowser.medDRALaunch.copyReportMethod(medDRALaunch.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -52,7 +55,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- copyReportMethod -->

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="MedDRA Launch Component">
+<suite name="MedDRA Browser">
 
-	<test name="medDRALaunch">
+	<test name="MedDRA Browser">
 		<classes>
-			<class name="pv.selenium.medDRABrowser.medDRALaunch"></class>	
+			<class name="pv.selenium.medDRALaunch_2116.medDRALaunch_2829"></class>
+			<class name="pv.selenium.medDRAAction_2258.medDRAAction_2834"></class>	
+			<class name="pv.selenium.medDRAAction_2258.medDRAAction_2835"></class>	
+			<class name="pv.selenium.medDRASearch_2208.medDRASearch_2842"></class>		
 		</classes>
 	</test>
 </suite>

@@ -1,4 +1,4 @@
-package pv.selenium.medDRABrowser;
+package pv.selenium.medDRASearch_2208;
 
 import java.util.Hashtable;
 
@@ -13,11 +13,11 @@ import pv.selenium.hybrid.util.Constants;
 import pv.selenium.hybrid.util.DataUtil;
 import pv.selenium.hybrid.util.Xls_Reader;
 
-public class medDRALaunch extends BaseTest{
+public class medDRASearch_2842 extends BaseTest{
        @BeforeTest
        public void init(){
           xls = new Xls_Reader(Constants.MEDDRA_BROWSER);
-          testName = "medDRALaunch";
+          testName = "medDRALaunch_2116";
        }
        
         @Test(dataProvider="getData")

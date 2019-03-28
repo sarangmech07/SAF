@@ -1,4 +1,4 @@
-package pv.selenium.medDRABrowser;
+package pv.selenium.medDRASearch_2208;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
