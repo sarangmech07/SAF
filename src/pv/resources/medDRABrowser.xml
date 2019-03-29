@@ -2,7 +2,7 @@
 
 <suite name="MedDRA Browser">
 
-	<test name="MedDRA Browser">
+	<test name="MedDRA Browser Test">
 		<classes>
 			<class name="pv.selenium.medDRALaunch_2116.medDRALaunch_2829"></class>
 			<class name="pv.selenium.medDRAAction_2258.medDRAAction_2834"></class>	
