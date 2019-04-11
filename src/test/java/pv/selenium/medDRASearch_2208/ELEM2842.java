@@ -13,12 +13,14 @@ import pv.selenium.hybrid.util.Constants;
 import pv.selenium.hybrid.util.DataUtil;
 import pv.selenium.hybrid.util.Xls_Reader;
 
-public class medDRASearch_2842 extends BaseTest{
-	/*hi this deeksha */
+public class ELEM2842 extends BaseTest{
        @BeforeTest
        public void init(){
-          xls = new Xls_Reader(Constants.MEDDRA_BROWSER);
-          testName = "medDRALaunch_2116";
+          xls = new Xls_Reader(Constants.ELEM_2208);
+          testName = "ELEM2842";
+          /*
+           * Verify that when the user opens the MedDRA browser, he/she can view the results with just one click
+           */
        }
        
         @Test(dataProvider="getData")

@@ -2,7 +2,7 @@
 <suite name="MedDRA Browser" >
 
   <suite-files>
-	<suite-file path="src/pv/resources/medDRABrowser.xml"/>
+	<suite-file path="src/pv/resources/ELEM2208.xml"/>
  
   </suite-files>
   <listeners>

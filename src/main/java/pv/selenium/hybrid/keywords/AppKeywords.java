@@ -253,9 +253,8 @@ public class AppKeywords extends GenericKeywords {
 		}
 		return Constants.PASS;
 	}
-	
-	// Disable browser notifications
 
+	// Disable browser notifications
 
 	public String inputInAlert(String data) {
 
@@ -285,7 +284,7 @@ public class AppKeywords extends GenericKeywords {
 		}
 	}
 
-	/*
+	/**
 	 * We have put two conditions in this keyword to verify PVI application data
 	 * (from UI) with either database or with export file. That's why we need to
 	 * mention either "File" or "DataBase" in the testcase data file to tell the
@@ -402,6 +401,32 @@ public class AppKeywords extends GenericKeywords {
 			ex.printStackTrace();
 		} catch (InterruptedException ex) {
 			ex.printStackTrace();
+		}
+		return Constants.PASS;
+	}
+
+	public String isSearchKeywordPresent(String locatorKey, String data) {
+		String xpath = prop.getProperty(locatorKey);
+		List<WebElement> containerList = driver.findElements(By.xpath(xpath));
+		for (WebElement container : containerList) {
+			List<WebElement> links = container.findElements(By.xpath("./descendant::a"));
+			for (WebElement link : links) {
+				if (!link.getText().startsWith(data) && !link.getText().contains("Show"))
+					return Constants.FAIL;
+			}
+		}
+		return Constants.PASS;
+	}
+	public String isSearchKeywordContained(String locatorKey, String data) {
+		String xpath = prop.getProperty(locatorKey);
+		xpath = "//div[contains(@class,'cMeddraResultPanel')]/div";
+		List<WebElement> containerList = driver.findElements(By.xpath(xpath));
+		for (WebElement container : containerList) {
+			List<WebElement> links = container.findElements(By.xpath("./descendant::a"));
+			for (WebElement link : links) {
+				if (!link.getText().contains(data) && !link.getText().contains("Show"))
+					return Constants.FAIL;
+			}
 		}
 		return Constants.PASS;
 	}

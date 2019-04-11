@@ -29,6 +29,11 @@ public class Constants {
 	public static final String CHANGE_PASSWORD_XLS = System.getProperty(USER_DIR) + "\\Data\\changePassword.xlsx";
 	public static final String LOGIN_SALESFORCE = System.getProperty(USER_DIR) + "\\Data\\LoginSF.xlsx";
 	public static final String MEDDRA_BROWSER = System.getProperty(USER_DIR) + "\\Data\\medDRABrowser.xlsx";
+	public static final String ELEM_2208 = System.getProperty(USER_DIR) + "\\Data\\ELEM2208.xlsx";
+	public static final String ELEM_2258 = System.getProperty(USER_DIR) + "\\Data\\ELEM2258.xlsx";
+	public static final String ELEM_2114 = System.getProperty(USER_DIR) + "\\Data\\ELEM2114.xlsx";
+	public static final String ELEM_3163 = System.getProperty(USER_DIR) + "\\Data\\ELEM3163.xlsx";
+	public static final String ELEM_2976 = System.getProperty(USER_DIR) + "\\Data\\ELEM2976.xlsx";
 	public static final String KEYWORDS_SHEET = "Keywords";
 
 	public static final String TCID_COL = "TCID";

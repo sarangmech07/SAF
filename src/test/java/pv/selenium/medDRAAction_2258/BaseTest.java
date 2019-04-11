@@ -1,4 +1,4 @@
-package pv.selenium.medDRASearch_2208;
+package pv.selenium.medDRAAction_2258;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
@@ -21,12 +21,10 @@ public class BaseTest {
 	
 	
 	
-	 /* @AfterMethod public void quit(){ if(rep!=null){ rep.endTest(test);
-	  rep.flush(); }
-	  
-	  if(app!=null) app.getGenericKeyWords().closeBrowser(); }
-	  */
-	
+	  @AfterMethod public void quit(){ if(rep!=null){ rep.endTest(test);
+	 rep.flush(); }
+	if(app!=null) app.getGenericKeyWords().closeBrowser(); }
+	 
 	
 	@DataProvider
 	public Object[][] getData(){

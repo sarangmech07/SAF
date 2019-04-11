@@ -29,7 +29,7 @@ public class Keywords {
 		
 	}
 
-	public void executeKeywords(String testUnderExecution, Xls_Reader xls, Hashtable<String, String> testData)  {
+	public void executeKeywords(String testUnderExecution, Xls_Reader xls, Hashtable<String, String> testData) {
 
 		app = new AppKeywords(test);
 
@@ -53,6 +53,8 @@ public class Keywords {
 				String data = testData.get(key);
 				test.log(LogStatus.INFO, "Test Name:  " + tcid + " || Step Row Number :  " + rNum + " ||  Keyword:  "
 						+ keyword + " || Element:  " + object + " ||  User Input:  " + data);
+				System.out.println( "Test Name:  " + tcid + " || Step Row Number :  " + rNum
+						+ " ||  Keyword:  " + keyword + " || Element:  " + object + " ||  User Input:  " + data +" TimeStamp:" + new Date());
 				String result = "";
 				if ("openBrowser".equalsIgnoreCase(keyword))
 					result = app.openBrowser(data);
@@ -120,6 +122,8 @@ public class Keywords {
 					result = app.dateselectdrpdownPVI(object, data);
 				else if ("verifyElementVisibleClickable".equalsIgnoreCase(keyword))
 					result = app.verifyElementVisibleClickable(object);
+				else if ("verifyElementVisibleNotClickable".equalsIgnoreCase(keyword))
+					result = app.verifyElementVisibleNotClickable(object);
 				else if ("valueHolder".equalsIgnoreCase(keyword))
 					result = app.valueHolder(object, data);
 				else if ("valueCopy".equalsIgnoreCase(keyword))
@@ -130,9 +134,15 @@ public class Keywords {
 					result = app.verifyEmailBody(object, data);
 				else if ("pviIEdownload".equalsIgnoreCase(keyword))
 					result = app.pviIEdownload();
+				else if ("isSearchKeywordPresent".equalsIgnoreCase(keyword))
+					result = app.isSearchKeywordPresent(object,data);
+				else if ("isSearchKeywordContained".equalsIgnoreCase(keyword))
+					result = app.isSearchKeywordContained(object,data);
 				else if ("isElementPresent".equalsIgnoreCase(keyword))
-					result =app.isElementPresent(object)==true ? "PASS": "FAIL";
-					
+					result = app.isElementPresent(object) == true ? "PASS" : "FAIL";
+				else if("getJsValueAndCompare".equalsIgnoreCase(keyword))
+					result = app.getJsValueAndCompare(object,data);
+
 				// central place reporting failure
 				if (!result.equals(Constants.PASS)) {
 					app.reportFailure(result);
@@ -143,7 +153,7 @@ public class Keywords {
 				}
 			}
 		}
-		
+
 	}
 
 	public AppKeywords getGenericKeyWords() {

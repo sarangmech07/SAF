@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pv.selenium.medDRABrowser.medDRALaunch">
+      <class name="pv.selenium.medDRASearch_2208.ELEM2840">
         <methods>
-          <include name="init"/>
           <include name="copyReportMethod" invocation-numbers="0"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- pv.selenium.medDRABrowser.medDRALaunch -->
+      </class> <!-- pv.selenium.medDRASearch_2208.ELEM2840 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -471,7 +471,10 @@ public class GenericKeywords {
 		WebElement e = getElement(locatorKey);
 		String actualText = e.getText();
 		if (actualText.contains(expectedText))
+		{
+			System.out.println("Text matched");
 			return Constants.PASS;
+		}
 		else if (expectedText.isEmpty()) {
 			actualText.isEmpty();
 			return Constants.PASS;
@@ -830,6 +833,33 @@ public class GenericKeywords {
 		}
 	}
 	
+	public String verifyElementVisibleNotClickable(String locatorKey) {
+		ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver driver) {
+				return ((JavascriptExecutor) driver).executeScript("return document.readyState").toString()
+						.equals("complete");
+			}
+		};
+		try {
+			Thread.sleep(5000);
+			WebDriverWait wait = new WebDriverWait(driver, 80);
+			//System.out.println("Initial Starting time of Page Load -- " + currentTime());
+			wait.until(expectation);
+			//System.out.println("Page Loaded -- " + currentTime());
+			//System.out.println("Checking for element visibility  --" + currentTime());
+			// wait.until(ExpectedConditions.)
+			wait.until(ExpectedConditions.visibilityOfElementLocated(getLocation(locatorKey)));
+			System.out.println("Checking if element is clickable  --" + currentTime());
+			wait.until(ExpectedConditions.elementToBeClickable(getLocation(locatorKey)));
+			Thread.sleep(5000);
+			reportFailure("Timeout waiting for Page Load Request to complete. --- " + locatorKey);
+			Assert.fail("Timeout waiting for Page Load Request to complete.");
+
+			return Constants.FAIL;
+		} catch (Exception ex) {
+			return Constants.PASS;
+		}
+	}
 	public String currentTime() {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 		LocalDateTime now = LocalDateTime.now();
@@ -928,6 +958,20 @@ public class GenericKeywords {
 		e.click();
 
 		return Constants.PASS;
+	}
+	
+	public String getJsValueAndCompare(String locatorKey,String data) {
+		try {
+			test.log(LogStatus.INFO, "Using Javascript Clicking on " + prop.getProperty(locatorKey));
+			WebElement e = getElement(locatorKey);
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			String value = (String) js.executeScript("return arguments[0].value;", e);
+			if(value.equals(data))
+			return Constants.PASS;
+		} catch (Exception e) {
+			return Constants.FAIL + " -- No javascript found or the arguments to the script may be empty.";
+		}
+		return  Constants.FAIL;
 	}
 
 }

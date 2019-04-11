@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="ELEM2208">
+
+	<test name="ELEM2836">
+		<classes>
+			<class name="pv.selenium.medDRASearch_2208.ELEM2836"></class>
+			<class name="pv.selenium.medDRASearch_2208.ELEM2838"></class>
+			<class name="pv.selenium.medDRASearch_2208.ELEM2839"></class>
+			<class name="pv.selenium.medDRASearch_2208.ELEM2841"></class>
+			<class name="pv.selenium.medDRASearch_2208.ELEM2842"></class>
+			<class name="pv.selenium.medDRASearch_2208.ELEM2843"></class>
+			<class name="pv.selenium.medDRASearch_2208.ELEM2844"></class>
+				
+		</classes>
+	</test>
+</suite>

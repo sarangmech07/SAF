@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="ELEM2208">
+
+	<test name="ELEM2836">
+		<classes>
+			<class name="pv.selenium.medDRASearch_2114.ELEM2824"></class>
+			<class name="pv.selenium.medDRASearch_2114.ELEM2825"></class>	
+			<class name="pv.selenium.medDRASearch_2114.ELEM2826"></class>
+			<class name="pv.selenium.medDRASearch_2114.ELEM2827"></class>
+			<class name="pv.selenium.medDRASearch_2114.ELEM2828"></class>
+		</classes>
+	</test>
+</suite>
